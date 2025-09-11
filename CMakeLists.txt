@@ -184,8 +184,9 @@ Include(FetchContent)
 FetchContent_Declare(
   better_enums
   GIT_REPOSITORY https://github.com/aantron/better-enums.git
-  GIT_TAG        c35576bed0295689540b39873126129adfa0b4c8 # 0.11.3
+  GIT_TAG        master 
 )
+FetchContent_MakeAvailable(better_enums)
 
 if(RDK_INSTALL_INTREE)
   set(RDKit_BinDir "${CMAKE_SOURCE_DIR}/bin")
